@@ -78,6 +78,9 @@ body {
 }
 ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 a {
   text-decoration: none;
@@ -87,6 +90,8 @@ img:not(.logo) {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -136,6 +141,9 @@ p {
   h3,
   h4 {
     line-height: 1;
+  }
+  ul {
+    flex-direction: row;
   }
 }
 /*  global classes */
@@ -233,7 +241,8 @@ nav {
   color: var(--clr-secondary);
 }
 .logo {
-  height: 50px;
+  max-width: 100%;
+  height: auto;
 }
 .links-container {
   height: 0;
